@@ -40,7 +40,7 @@ class SortOrderFactory
     public function getDefaultSortOrders()
     {
         return [
-            (new SortOrder('product', 'position', 'desc'))->setLabel(
+            (new SortOrder('product', 'position', 'asc'))->setLabel(
                 $this->translator->trans('Relevance', array(), 'Shop.Theme.Catalog')
             ),
             (new SortOrder('product', 'name', 'asc'))->setLabel(
